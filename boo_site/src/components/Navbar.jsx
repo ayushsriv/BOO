@@ -42,7 +42,7 @@ const Navbar = () => {
 
             <div 
                 className={`${toggle ? 'flex' : 'hidden'}
-                p-6 bg-black-gradient absolute top-20 
+                p-6 absolute top-20 
                 right-0 mx-4 my-2 min-w-[140px] rounded-xl
                 sidebar`}>
                 <ul className="list-none flex flex-col
@@ -51,8 +51,7 @@ const Navbar = () => {
                         <li
                             key={nav.id}
                             className={`font-poppins font-normal
-                            cursor-pointer text-[16px] ${index === navLinks.length 
-                            - 1 ? 'mr-0' : 'mb-4'}
+                            cursor-pointer text-[16px] mb-4
                             text-white`}
                         >
                             <a href={`#${nav.id}`}>
@@ -60,6 +59,13 @@ const Navbar = () => {
                             </a>
                         </li>
                     ))}
+                    <li className={`font-poppins font-normal
+                        cursor-pointer text-[16px] mb-0
+                        text-white`}>
+                        <a href={resume} rel="noopener noreferrer" target="_blank">
+                            Resume
+                        </a>        
+                    </li>
                 </ul>
             </div>
         </div>
