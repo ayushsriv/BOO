@@ -4,10 +4,11 @@ import CardDeal from "./CardDeal";
 import Business from "./Business";
 import Clients from "./Clients";
 import CTA from "./CTA";
-import Stats from "./Stats";
+import About from "./About";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
+import Three from "./Three";
 
 export {
   Navbar,
@@ -16,8 +17,9 @@ export {
   Business,
   Clients,
   CTA,
-  Stats,
+  About,
   Footer,
   Testimonials,
   Hero,
+  Three,
 };

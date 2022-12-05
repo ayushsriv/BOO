@@ -1,23 +1,21 @@
 import { useState } from "react"
 
-import { close, logo, menu} from '../assets'
+import { close, menu} from '../assets'
 import { navLinks} from '../constants'
+import {resume} from '../assets';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
-  return (
+    return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-        <div className="flex justify-between items-center w-full h-20 px-4 text-white">
-            <h1 className="text-3xl font-poppins"> Ayush Srivastava </h1>
-        </div>
+        <h1 className="text-3xl font-poppins text-white"> Ayush Srivastava </h1>
         <ul className="list-none sm:flex hidden 
         justify-end items-center flex-1">
             {navLinks.map((nav, index) => (
                 <li
                     key={nav.id}
                     className={`font-poppins font-normal
-                    cursor-pointer text-[16px] ${index === navLinks.length 
-                    - 1 ? 'mr-0' : 'mr-10'}
+                    cursor-pointer text-[16px] mr-10
                     text-white`}
                 >
                     <a href={`#${nav.id}`}>
@@ -25,6 +23,13 @@ const Navbar = () => {
                     </a>
                 </li>
             ))}
+            <li className={`font-poppins font-normal
+                    cursor-pointer text-[16px] mr-0
+                    text-white`}>
+                <a href={resume} rel="noopener noreferrer" target="_blank">
+                    Resume
+                </a>        
+            </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -37,7 +42,7 @@ const Navbar = () => {
 
             <div 
                 className={`${toggle ? 'flex' : 'hidden'}
-                p-6 bg-black-gradient absolute top-20
+                p-6 bg-black-gradient absolute top-20 
                 right-0 mx-4 my-2 min-w-[140px] rounded-xl
                 sidebar`}>
                 <ul className="list-none flex flex-col
