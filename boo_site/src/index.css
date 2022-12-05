@@ -166,10 +166,14 @@ video {
   position: relative;
   top: -500px;
   left: 20%;
+  margin-right: 20%;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
 .three {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   bottom: 250px;
+  align-items: center;
 }

@@ -5,9 +5,9 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => (
     <div id="home">
-      <video src={dallas} autoPlay muted />
-      <div className='overlay items-center flex' >
-        <h1 className='text-center text-4xl font-poppins text-white'>
+      <video src={dallas} autoPlay muted playsInline/>
+      <div className='overlay flex' >
+        <h1 className='text-4xl font-poppins text-white'>
           <TypeAnimation 
            sequence = {['Hey!', 3000, 'Wanna hear a knock knock joke?', 2000,
            'Knock Knock', 5000, 'Allah', 2500, 'Akbar', 2000, '' ]}
