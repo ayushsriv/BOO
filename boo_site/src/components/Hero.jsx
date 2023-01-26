@@ -1,16 +1,16 @@
 import React from 'react'
-import {dallas} from '../assets'
+import {dallasdrone} from '../assets'
 import { TypeAnimation } from 'react-type-animation';
 
 
 const Hero = () => (
     <div id="home">
-      <video src={dallas} autoPlay muted playsInline/>
+      <video src={dallasdrone} autoPlay muted playsInline/>
       <div className='overlay flex' >
         <h1 className='text-4xl font-poppins text-white'>
           <TypeAnimation 
-           sequence = {['Hey!', 3000, 'Wanna hear a knock knock joke?', 2000,
-           'Knock Knock', 5000, 'Allah', 2500, 'Akbar', 2000, '' ]}
+           sequence = {["Hey!", 3000, "Careful", 2000,
+           "This site is under contruction", 3000, ""]}
            wrapper="div"
            cursor={true} />
         </h1>

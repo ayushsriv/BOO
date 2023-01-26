@@ -177,3 +177,27 @@ video {
   bottom: 250px;
   align-items: center;
 }
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40%;
+  width: 56%;
+  margin-top: 10px;
+}
+
+.card{
+  align-items: center;
+  text-align: center;
+  box-shadow: #33bbcf;
+  margin-left: auto;
+  margin-right: auto; 
+  padding: 15px;
+  background-color: white;
+  border-radius: 25px;
+  margin: 10px;
+  flex: 1;
+  max-width: 500px;
+  max-height: 500px;
+}

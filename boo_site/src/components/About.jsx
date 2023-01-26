@@ -4,7 +4,7 @@ import styles, {layout} from '../style';
 
 const About = () => {
   return (
-    <section id="about" className={`${layout.section}`} >
+    <section id="about" className={`${layout.section} items-center`} >
       <div className={`${layout.sectionInfo}`}>
         <h1 className="text-4xl font-poppins  text-white border-b-4 border-emerald-600 ">About</h1>
         <p className={`${styles.paragraph} min-w-[300px] max-w-[470px] mt-5`}>I received my BS from UT Austin in 2020 and moved to Dallas where I am currently working as an Analyst for Goldman Sachs. 
