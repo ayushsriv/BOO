@@ -1,4 +1,4 @@
-import dallasdrone from "./dallasdrone.mp4";
+//import dallasdrone from "./dallasdrone.mp4";
 import resume from "./Resume.pdf";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -9,7 +9,6 @@ import leetcode from "./leetcode.svg";
 export {
   menu,
   close,
-  dallasdrone,
   resume,
   foveated,
   privacycheck,
